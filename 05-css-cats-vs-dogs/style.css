@@ -73,4 +73,65 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+body {
+	width:960px;
+	margin: 0 auto;
+}
 
+header#site-header {
+				position:relative;
+				height:200px;
+				width: 960px;
+}
+header#site-header img {     
+  					position:absolute;
+  					top:0;
+  					left:200px;  					
+  			
+}
+#bar-menu {
+		position:absolute;
+		bottom:0;
+		left:220px;
+		height:100px;
+			
+}
+nav#bar-menu li  {
+			float:left;
+			padding:10px;
+			margin:10px 0px 5px 15px;
+}
+#dogs-cats {
+		position:relative;
+		height: 320px;
+		
+}
+#dogs-cats h1 {
+			padding-bottom:10px;
+}			
+	
+#dogs-cats .dogs {
+			/*display:block;*/
+			float:left;
+			width:48%;
+			marg-n-right:5px;
+}
+#dogs-cats .cats {
+			/*display:block;*/
+			float:right;
+			width:48%;	
+}		
+
+footer#site-footer {
+				position:relative;
+				height:100px;
+				margin-top:50px;
+				margin-bottom:10px;
+}
+#site-footer .left-side {
+					float:left;
+		
+}
+#site-footer .right-side {
+					float:right;		
+}
