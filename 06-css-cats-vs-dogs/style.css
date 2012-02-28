@@ -65,65 +65,112 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-/* body {
+/*body {
 	width:960px;
 	margin: 0 auto;
-}
-*/
+} */
+
 header#site-header {
 				position:relative;
 				height:200px;
 				width: 960px;
 }
-header#site-header img {     
-  					position:absolute;
-  					top:0;
-  					left:200px;  					
-  			
+header#site-header h1 a {     
+  					display:block;
+  					width:445px;
+  					height:95px;
+  					background:url(images/dogvscat-logo.gif) no-repeat top left;
+  					text-indent:-9999px;
+  					margin-left:auto;
+  					margin-right:auto;
+  					margin-top:10px;
+  					margin-bottom:30px;
 }
-#bar-menu {
+nav#bar-menu {
 		position:absolute;
-		bottom:0;
-		left:220px;
-		height:100px;
+		width:960px;
+		margin:0px auto;
+		border-top:3px solid black;
+		border-bottom:3px solid black;
+		/*background-color:yellow;*/
+}
+
+nav#bar-menu li {
+			float:left;
+			padding: 0px 30px 0px 30px;
+			margin-left:40px;
+			list-style-type:disc;
+			list-style-position:outside;
+			/*background-color:red;*/
+}			
+			
+nav#bar-menu li a {
+				font-variant:small-caps;
+				text-decoration:none;
+				color:black;
+				font-weight:bold;
+				font-size:30px;
+				/*background-color:grey;*/
+				
 			
 }
-nav#bar-menu li  {
-			float:left;
-			padding:10px;
-			margin:10px 0px 5px 15px;
-}
 #dogs-cats {
-		position:relative;
-		height: 320px;
+		margin:0px auto;
 		
 }
 #dogs-cats h1 {
-			padding-bottom:10px;
-}			
+			padding-top:20px;
+			padding-bottom:20px;
+			font-weight: bold;
+  			font-size: 25px;
+  			
+}
+#dogs-cats p {
+			line-height:1.2;
+			font-size:15px;
+}
+
 	
 #dogs-cats .dogs {
 			/*display:block;*/
 			float:left;
 			width:48%;
-			marg-n-right:5px;
+			
 }
 #dogs-cats .cats {
 			/*display:block;*/
 			float:right;
-			width:48%;	
-}		
+			width:48%;
+			
+			
+}
+
+#dogs-cats img {
+			width:92%;
+			margin:0 14px;
+}			
 
 footer#site-footer {
 				position:relative;
 				height:100px;
-				margin-top:50px;
+				margin-top:20px;
 				margin-bottom:10px;
+				border-top:3px solid black;
 }
-#site-footer .left-side {
+#site-footer p.left-side {
 					float:left;
+					padding-top:10px;
 		
 }
-#site-footer .right-side {
-					float:right;		
+#site-footer p.right-side {
+					float:right;
+					padding-top:10px;
 }
+#site-footer a {
+			font-size:14px;
+			text-decoration:none;
+			color:red;
+}			
+#site-footer p {
+			font-size:14px;
+}		
