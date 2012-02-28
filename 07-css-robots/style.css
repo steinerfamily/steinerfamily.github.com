@@ -145,19 +145,19 @@ nav#main-menu {
 }
 
 #page h1 {
-  color: #744918;
-  font: bold 40px "Monotype Corsiva";
+  color:#744918;
+  font:bold 40px "Monotype Corsiva";
 }
 
 #page h2 {
-  padding: 10px 0px;
-  color: #744918;
-  font: bold 20px "Arial";
+  padding:10px 0px;
+  color:#744918;
+  font:bold 20px "Arial";
   text-transform: uppercase;
 }
 
 #page p {
-  padding: 10px 0px;
+  padding:10px 0px;
   font:"Arial"
   font-size:14px
   line-height:4;
@@ -179,15 +179,15 @@ nav#main-menu {
 }
 
 #sidebar h1 {
-  padding: 10px 0px;
-  color: #744918;
-  font: bold 20px "Arial";
+  padding:10px 0px;
+  color:#744918;
+  font:bold 20px "Arial";
   text-transform: uppercase;
 }
 
 #sidebar img {
   float:left;
-  margin: 10px 0px 0px 10px;
+  margin:10px 0px 0px 10px;
 }
 
 #footer-wrapper {
