@@ -100,10 +100,15 @@ nav#bar-menu li {
 			padding: 0px 30px 0px 30px;
 			margin-left:40px;
 			list-style-type:disc;
-			list-style-position:outside;
+			/*list-style-position:outside;*/
 			/*background-color:red;*/
-}			
+}
+
+nav#bar-menu li:first-child {
+			list-style-type:none;
+}
 			
+
 nav#bar-menu li a {
 				font-variant:small-caps;
 				text-decoration:none;
