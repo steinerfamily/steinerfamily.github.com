@@ -1,0 +1,184 @@
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width:100%;
+}
+
+header {
+	width:100%;
+	overflow:auto;
+	/*padding:10% 10%;*/
+	background-color:blue;
+}
+
+aside#pic-bar { 
+			width:29%;
+			background-color:orange;
+			float:left;			
+}			
+
+aside#pic-bar ul li {
+					width:90px;
+					height:65px;
+					margin:0.125em;
+					background-color:green;
+					float:left;		
+}
+
+aside# img {
+		overflow:none;
+}
+
+.clear {
+	clear:left;
+}
+
+div#nav-logo {
+			float:left;
+			width:36%;
+			overflow:none;
+			margin-left:15%;
+			background-color:yellow;
+}
+
+
+nav#home-nav ul {
+			width:100%;
+			overflow:auto;
+			background-color:green;
+			/*list-style: none;
+			margin-left: 0;
+			padding-left: 1em;
+			text-indent: -1em;*/
+}
+
+nav#home-nav ul a {
+				display:block;
+				float:left;
+				margin:1em;
+				padding:0.3em;
+				/*background-color:orange;*/
+				list-style: none;
+				text-decoration:none;
+				color: black;								
+}
+
+.clear {
+	clear:left;
+}
+
+#home-nav li:after {
+				content: "+ ";
+				float:left;
+				padding-top:1.3em;
+}
+
+#home-nav li:last-child:after {
+							content: none;
+}
+
+nav#home-nav ul a:hover {
+				display:block;
+				padding: 0.3em;
+				background-color:black;
+				color: white;								
+}
+
+article#firm-logo{
+				width:100%;
+/*				overflow:auto; */
+				margin-top:40%;
+				background-color:grey;
+}
+
+article#firm-logo img {
+					float:left;
+					max-width:100%;
+}
+
+article#firm-logo p{
+					display:block;
+					background-color:white;
+					float:left;
+					margin-top:1%;
+					padding-left:5%;
+}
+
+.clear {
+	clear:left;
+}
+
+#info h1 {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: -615px;
+	padding: 0.25em;
+	background-color:white;
+	-webkit-transform: rotate(90deg) translateX(20px); 
+    -moz-transform:    rotate(90deg) translateX(20px);
+    -ms-transform:     rotate(90deg) translateX(20px);
+    -o-transform:      rotate(90deg) translateX(20px); 
+    transform:         rotate(90deg) translateX(20px); 
+    -webkit-transform-origin: 1.8em .5em;
+    -moz-transform-origin:    1.8em .5em;
+    -ms-transform-origin:     1.8em .5em;
+    -o-transform-origin:      1.8em .5em;
+    transform-origin:         1.8em .5em;
+    }
+	
+span {
+		display:inline;
+		padding-right:0.5em;
+		padding-left:0.5em;
+}
+

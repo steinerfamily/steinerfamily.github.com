@@ -80,11 +80,11 @@ body {
 }
 
 #site-header h1 a {
-  /*display:block;*/
+  display:block;
   background:url(images/logo.png) no-repeat top left;
   height:123px;
   width:306px;
-  position:absolute;
+  /*position:relative;*/
   text-indent:-9999px;
 }
 
