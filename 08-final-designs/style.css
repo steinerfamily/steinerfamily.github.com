@@ -57,26 +57,104 @@ header {
 	width:100%;
 	overflow:auto;
 	/*padding:10% 10%;*/
-	background-color:blue;
+	/*background-color:blue;*/
 }
 
 aside#pic-bar { 
 			width:29%;
-			background-color:orange;
-			float:left;			
+			/*background-color:orange;*/
+			float:left;
+			margin-top:0.3em;
 }			
 
 aside#pic-bar ul li {
 					width:90px;
 					height:65px;
 					margin:0.125em;
-					background-color:green;
-					float:left;		
+					/*background-color: black;*/
+					float:left;
 }
 
 aside# img {
-		overflow:none;
+		overflow:auto;
 }
+
+.shadow {
+		-webkit-box-shadow: 0.5px 0.5px 0.5px #aaa;
+		-moz-box-shadow: 10px 10px 10px #aaa;
+		box-shadow: 1px 1px 1px #aaa;
+} 
+
+.f1_container {
+			position: relative;
+			width: 90px;
+			height: 65px;
+			z-index: 1;
+}
+
+.face.back {
+		display: none;
+}
+
+.f1_container {
+			-webkit-perspective: 1000;
+}
+				
+.f1_card {
+		width: 100%;
+		height: 100%;
+		-webkit-transform-style: preserve-3d;
+		-webkit-transition: all 0.2s linear;
+		-moz-transform-style: preserve-3d;
+		-moz-transition: all 0.5s linear;
+		-o-transform-style: preserve-3d;
+		-o-transition: all 0.5s linear;
+		-ms-transform-style: preserve-3d;
+		-ms-transition: all 0.5s linear;
+		transform-style: preserve-3d;
+		transition: all 0.5s linear;
+}
+
+.f1_container:hover .f1_card, .f1_container.hover_effect .f1_card {
+																-webkit-transform: rotateY(180deg);
+																-moz-transform: rotateY(180deg);
+																-o-transform: rotateY(180deg);
+																-ms-transform: rotateY(180deg);
+																transform: rotateY(180deg);
+																-webkit-box-shadow: -1px 1px 1px #aaa;
+																-moz-box-shadow: -10px 10px 10px #aaa;
+																box-shadow: -1px 1px 1px #aaa; 
+}
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.face.back {
+		display: block;
+		-webkit-transform: rotateY(180deg);
+		-webkit-box-sizing: border-box;
+		-moz-transform: rotateY(180deg);
+		-moz-box-sizing: border-box;
+		-o-transform: rotateY(180deg);
+		-o-box-sizing: border-box;
+		-ms-transform: rotateY(180deg);
+		-ms-box-sizing: border-box;
+		transform: rotateY(-180deg);
+		box-sizing: border-box;
+		padding-bottom: auto; ;
+		color: white;
+		text-align: left;
+		background-color: #aaa;
+}
+
 
 .clear {
 	clear:left;
@@ -87,16 +165,16 @@ div#nav-logo {
 			width:36%;
 			overflow:none;
 			margin-left:15%;
-			background-color:yellow;
+			/*background-color:yellow;*/
 }
 
 
 nav#home-nav ul {
 			width:100%;
 			overflow:auto;
-			background-color:green;
-			/*list-style: none;
-			margin-left: 0;
+			/*background-color:green;*/
+			list-style: none;
+			/*margin-left: 0;
 			padding-left: 1em;
 			text-indent: -1em;*/
 }
@@ -104,53 +182,80 @@ nav#home-nav ul {
 nav#home-nav ul a {
 				display:block;
 				float:left;
-				margin:1em;
-				padding:0.3em;
-				/*background-color:orange;*/
+				margin-right: 1.4em;
+				padding: 0.2em;
+				margin-left: 1.7em;
+				margin-top: 1em;
 				list-style: none;
 				text-decoration:none;
-				color: black;								
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #555555;
+				/*background-color:orange;*/				
 }
 
-.clear {
-	clear:left;
-}
 
 #home-nav li:after {
 				content: "+ ";
 				float:left;
-				padding-top:1.3em;
+				padding-top: 2.0em;		
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				color: #555555;
 }
 
 #home-nav li:last-child:after {
 							content: none;
 }
 
+#home-nav li:first-child {
+						margin-left: -3em;
+						padding-left:0.5em;
+}
+
+#align {
+	margin-left: 2.4em;
+}
+
 nav#home-nav ul a:hover {
-				display:block;
-				padding: 0.3em;
-				background-color:black;
+				display: block;
+				background-color: #666666;
 				color: white;								
+}
+
+.clear {
+	clear:left;
 }
 
 article#firm-logo{
 				width:100%;
-/*				overflow:auto; */
-				margin-top:40%;
-				background-color:grey;
+				overflow:auto;
+				margin-top:20%;
+				/*background-color:grey;*/
 }
 
 article#firm-logo img {
 					float:left;
-					max-width:100%;
+					height:225px;
+					padding-right: 5%;
 }
 
-article#firm-logo p{
-					display:block;
-					background-color:white;
-					float:left;
-					margin-top:1%;
-					padding-left:5%;
+article#firm-logo p {
+					float:right;
+					padding-top:6.5em;
+					margin-top:7%;
+					margin-right: 1em;
+					padding-left:1.2%;
+}
+
+article#firm-logo p {
+				font-family: Courier;
+				font-size: 0.9em;
+				line-height: 1.35em;
+				text-align: justify;
+				color: #333333;
 }
 
 .clear {
@@ -160,9 +265,9 @@ article#firm-logo p{
 #info h1 {
 	display: block;
 	position: absolute;
-	top: 10px;
-	right: -615px;
-	padding: 0.25em;
+	top: 25px;
+	right: -590px;
+	padding: 0.3em;
 	background-color:white;
 	-webkit-transform: rotate(90deg) translateX(20px); 
     -moz-transform:    rotate(90deg) translateX(20px);
@@ -175,10 +280,18 @@ article#firm-logo p{
     -o-transform-origin:      1.8em .5em;
     transform-origin:         1.8em .5em;
     }
+    
+#info h1 {
+		font-family: "Courier New", Courier, monospace;
+		color: #555555;
+		font-size: 0.75em;
+}
+		
 	
 span {
-		display:inline;
-		padding-right:0.5em;
-		padding-left:0.5em;
+		display: inline;
+		padding-right: 0.1em;
+		padding-left: 0.1em;
+		color: #cc0000;
 }
 
