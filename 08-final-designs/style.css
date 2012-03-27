@@ -55,7 +55,7 @@ body {
 
 header {
 	width:100%;
-	overflow:auto;
+	overflow:none;
 	/*padding:10% 10%;*/
 	/*background-color:blue;*/
 }
@@ -65,7 +65,11 @@ aside#pic-bar {
 			/*background-color:orange;*/
 			float:left;
 			margin-top:0.3em;
-}			
+}		
+
+.clear {
+	clear:left;
+}
 
 aside#pic-bar ul li {
 					width:90px;
@@ -73,10 +77,6 @@ aside#pic-bar ul li {
 					margin:0.125em;
 					/*background-color: black;*/
 					float:left;
-}
-
-aside# img {
-		overflow:auto;
 }
 
 .shadow {
