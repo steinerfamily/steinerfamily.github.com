@@ -197,8 +197,8 @@ av#home-nav ul {
 nav#home-nav a {
 				display:block;
 				float:left;
-				margin-right: 7%;
-				margin-left: 7%;
+				margin-right: 6%;
+				margin-left: 6%;
 				padding: 0em 0.2em;
 				list-style: none;
 				text-decoration: none;
@@ -237,8 +237,9 @@ nav#home-nav .current a {
 #info h1 {
 	display: block;
 	position: fixed;
-	top: 25px;
+	top: 2%;
 	right: -590px;
+	margin: 0 auto;
 	background-color:white;
 	z-index: 1000;
 	-webkit-transform: rotate(90deg) translateX(20px); 
@@ -268,14 +269,14 @@ span {
 }
 
 div#content {
-			margin-right: 3.54%;
+			margin-right: 10.5%;
 			margin-left: 26.6%;
 			/*background-color: yellow;*/
 }
 
 article#firm-logo {
-			margin-right: 15%;
-			margin-left: 15%;
+			margin-right: 10%;
+			margin-left: 10%;
 			padding-top: 22em;
 			/*background-color: blue;*/
 }
@@ -292,7 +293,7 @@ article#firm-logo img {
 article#firm-logo p {
 				display: block;
 				float: left;
-				width: 71%;
+				width: 70.5%;
 				font-family: Courier;
 				font-size: 0.96em;
 				line-height: 1.5em;
