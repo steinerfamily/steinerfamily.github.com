@@ -179,10 +179,11 @@ aside#pic-bar img {
 nav#home-nav {
 			position: fixed;
 			top: 0em;
-			left: 26%;
-			width: 71.6%;
+			min-width: 70%;
+			margin-right: 30%;
+			margin-left: 26.6%;
 			z-index: 100;
-			padding-top: 0.1em;
+			padding-top: 0.3em;
 			padding-bottom: 7em;
 			background-color: white;
 }
@@ -193,13 +194,12 @@ av#home-nav ul {
 			list-style: none;
 }
 
-nav#home-nav ul a {
+nav#home-nav a {
 				display:block;
 				float:left;
-				margin-right: 2.0em;
-				padding: 0.1em;
-				margin-left: 2.0em;
-				margin-top: 0.2em;
+				margin-right: 7%;
+				margin-left: 7%;
+				padding: 0em 0.2em;
 				list-style: none;
 				text-decoration: none;
 				font-family: "Courier New", Courier, monospace;
@@ -208,40 +208,23 @@ nav#home-nav ul a {
 				text-transform: uppercase;
 				color: #5c5c5c;				
 }
-
-.blog {
-				display:block;
-				float:left;
-				margin-right: 2.0em;
-				padding: 0.1em;
-				margin-left: 2.0em;
-				margin-top: 0.2em;
-				list-style: none;
-				text-decoration: none;
-				font-family: "Courier New", Courier, monospace;
-				font-size: 1.5em;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				color: #5c5c5c;				
-}
-
-
 
 #home-nav a:hover {
-					color: #6D7B8D;
+					color: #cc0000;
+					
 					
 }
 
 
 nav#home-nav .current a {
 		background-color: #595959;
-		color: white;								
+		color: white;
 }
 
 #home-nav li:after {
 				content: "+ ";
 				float:left;
-				padding-top: 0.6em;		
+				padding-top: 0.3em;		
 				font-family: "Courier New", Courier, monospace;
 				font-size: 1.2em;
 				color: #363636;
@@ -285,7 +268,7 @@ span {
 }
 
 div#content {
-			margin-right: 2.5%;
+			margin-right: 3.54%;
 			margin-left: 26.6%;
 			/*background-color: yellow;*/
 }
@@ -299,7 +282,7 @@ article#firm-logo {
 	
 article#firm-logo img {
 					float: left;
-					width: 27%;
+					width: 26%;
 					min-width: 9em;
 					padding-right: 1.2em;
 					padding-bottom: 1.2em;
@@ -309,7 +292,7 @@ article#firm-logo img {
 article#firm-logo p {
 				display: block;
 				float: left;
-				width: 70%;
+				width: 71%;
 				font-family: Courier;
 				font-size: 0.96em;
 				line-height: 1.5em;
@@ -385,15 +368,13 @@ ul.polaroids1 a {
 	-o-transition: all 0.5s ease;
 }
 
-ul.polaroids1 a:after {content:attr(title);}
-
 ul.polaroids1 a:hover {
 	-webkit-transform: rotate(3deg);
 	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(3deg);
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	z-index: 5;	
+	z-index: 5;
 }
 
 ul.polaroids1 img {
@@ -406,7 +387,7 @@ ul.polaroids1 img {
 	float: left;
 	padding-top: 1%;
 	padding-left: 0.5em;
-	width: 74%;
+	width: 71%;
 	font-family: Courier;
 	font-size: 0.94em;
 	line-height: 1.5em;
@@ -446,8 +427,6 @@ ul.polaroids2 a {
 	-o-transition: all 0.5s ease;
 }
 
-ul.polaroids2 a:after {content:attr(title);}
-
 ul.polaroids2 a:hover {
 	-webkit-transform: rotate(-3deg);
 	-webkit-transition: -webkit-transform .15s linear;
@@ -465,7 +444,7 @@ ul.polaroids2 img {
 #team p.text2 {
 	display: block;	
 	float: right;
-	width: 74%;
+	width: 71%;
 	padding-top: 1%;
 	padding-right: 0.5em;
 	font-family: Courier;
@@ -492,7 +471,7 @@ article#contact img {
 			
 article#contact p {
 				display: block;
-				width: 70%;
+				width: 71%;
 				float: left;
 				padding-top: 3.7%;
 				font-family: Courier;

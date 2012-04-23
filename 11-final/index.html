@@ -15,6 +15,12 @@
 	<script>
 	$(document).ready(function() {
   		$('.nav').onePageNav({
+  		
+  			currentClass: 'current',
+  			changeHash: false,
+ 			scrollSpeed: 1500,
+  			scrollOffset: 30,
+ 						
     		begin: function() {
 	  			console.log('start');
     		},
@@ -76,10 +82,10 @@
 										
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <a href="#team"><img src="./images/orona.jpeg"/></a>	
+						      <img src="./images/orona.jpeg"/>	
 						      </div>
 						      <div class="back face">
-						      <a href="#team"><img src="./images/oronb.jpeg"/></a>
+						      <img src="./images/oronb.jpeg"/>
 						      </div>
 						</div>
 						</li>
@@ -124,10 +130,10 @@
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <a href="#team"><img src="./images/hanaa.jpeg"/></a>
+						      <img src="./images/hanaa.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <a href="#team"><img src="./images/hanab.jpeg"/></a>
+						      <img src="./images/hanab.jpeg"/>
 						      </div>
 						</div>
 					</li>
@@ -162,10 +168,10 @@
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <a href="#contact"><img src="./images/kardana.jpeg"/></a>
+						      <img src="./images/kardana.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <a href="#contact"><img src="./images/kardanb.jpeg"/></a>
+						      <img src="./images/kardanb.jpeg"/>
 						      </div>
 						</div>
 						</li>
@@ -182,10 +188,10 @@
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <a href="#team"><img src="./images/ereza.jpeg"/></a>
+						      <img src="./images/ereza.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <a href="#team"><img src="./images/erezb.jpeg"/></a>
+						      <img src="./images/erezb.jpeg"/>
 						      </div>
 						</div>
 						</li>
@@ -218,19 +224,19 @@
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						    	<a href="#team"><img src="./images/elia.jpeg"/></a>
+						      <img src="./images/elia.jpeg"/>
 						      </div>
-						      <a href="#team"><img src="./images/elib.jpeg"/></a>
+						      <img src="./images/elib.jpeg"/>
 						      </div>						    
 						</div>
 					</li>
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <img src="./images/book3a.jpeg"/>
+						      <img src="./images/oda.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <img src="./images/book3b.jpeg"/>
+						      <img src="./images/odb.jpeg"/>
 						      </div>					
 						</div>
 					</li>
@@ -257,20 +263,20 @@
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <a href="#team"><img src="./images/leaha.jpeg"/></a>
+						      <img src="./images/leaha.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <a href="#team"><img src="./images/leahb.jpeg"/></a>
+						      <img src="./images/leahb.jpeg"/>
 						      </div>
 						</div>
 					</li>
 					<li class="f1_container hover">
 						<div class="f1_card shadow">
 						      <div class="front face">
-						      <img src="./images/oda.jpeg"/>
+						      <img src="./images/book3a.jpeg"/>
 						      </div>
 						      <div class="back face">
-						      <img src="./images/odb.jpeg"/>
+						      <img src="./images/book3b.jpeg"/>
 						      </div>						
 						</div>
 						</li>
@@ -383,12 +389,11 @@
 			
 
 			<nav id="home-nav" class="clearfix">
-				<ul class="nav">
+				<ul class="nav" class="clearfix">
 					<li class="current"><a href="#section-1">Home</a></li>
 					<li><a href="#section-2">About</a></li>
 					<li><a href="#section-3">Team</a></li>
 					<li><a href="#section-4">Contact Us</a></li>
-					<li> <p class="blog">Blog</p></li>
 				</ul>
 			</nav>
 			
