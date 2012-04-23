@@ -369,6 +369,8 @@ ul.polaroids1 a {
 	-o-transition: all 0.5s ease;
 }
 
+ul.polaroids1 a:after {content:attr(title);}
+
 ul.polaroids1 a:hover {
 	-webkit-transform: rotate(3deg);
 	-webkit-transition: -webkit-transform .15s linear;
@@ -427,6 +429,8 @@ ul.polaroids2 a {
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 }
+
+ul.polaroids2 a:after {content:attr(title);}
 
 ul.polaroids2 a:hover {
 	-webkit-transform: rotate(-3deg);
