@@ -67,42 +67,48 @@ table {
 
 /* close commented backslash hack */
 
+@media screen and (max-width: 1300px) {
+   
+    #info { display:none; }
+  }
+  
+@media screen and (max-width: 1220px) {
+  
+    aside#pic-bar { display:none; }
+   } 
+  
 body {
 	font-family:  "Courier New", Courier, monospace;
 	font-size:1em;
 }
 
-header {	
-	width:100%;
-	z-index: 1000;
-	position:fixed;
-	background-color: green;
-}
-
 aside#pic-bar { 
-			width: 25%;
+			width: 260px;
 			position: fixed;
-			top: 1em;
-			margin-left: 0.3em;
-			margin-top: 0.1em;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 3px;
+			z-index: 10;
+			/*background-color: green;*/
 }			
 
 
 aside#pic-bar ul li {
-					width: 90px;
-					height: 65px;
 					float: left;
-					margin: 0.15em;
+					width: 82px;
+					height: 59px;
+					margin: 0.124em;
 }
 
 aside#pic-bar img {
-				width:100%;
+				width: 100%;
+				height: 100%;
 }
 
 .shadow {
-		-webkit-box-shadow: 0.0px 0.0px 0.0px;
-		-moz-box-shadow: 0.0px 0.0px 0.0px;
-		box-shadow: 0.0px 0.0px 0.0px;
+		-webkit-box-shadow: 1px 1px 0.0px;
+		-moz-box-shadow: 1px 1px 0.0px;
+		box-shadow: 1px 1px 0.0px;
 } 
 
 .face.back {
@@ -167,69 +173,91 @@ aside#pic-bar img {
 		background-color: white;
 }
 
-nav#home-nav {
-			position: fixed;
-			top: 0em;
-			left: 26%;
-			width: 71.6%;
-			z-index: 100;
-			padding-top: 0.8em;
-			padding-bottom: 7em;
-			background-color: white;		
-}
+#header {
+		position: fixed;
+		left: 0px;
+		width: 100%;
+		/background-color: grey;*/
+		z-index: 9;
+}		
 
-/*#home-nav.header.shad {
-					border-bottom: 2px solid rgba(130,130,130,0.2);
-					box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);*/
+nav#home-nav {
+			position: relative;
+			left: 10%;
+			margin: 0 auto;
+			width: 960px;
+			z-index: 100;
+			padding-top: 0.3em;
+			padding-bottom: 7em;
+			background-color: white;
+			/*background-color: pink;*/
 }
 
 nav#home-nav ul {
-			width: 100%;
 			float: left;
+			width: 960px;
+			/*background-color: green;*/
 			list-style: none;
 }
 
-nav#home-nav ul a {
-				display:block;
-				float:left;
-				margin-right: 2.0em;
-				padding: 0.1em;
-				margin-left: 2.0em;
-				margin-top: 0.2em;
-				list-style: none;
-				text-decoration: none;
-				font-family: "Courier New", Courier, monospace;
-				font-size: 1.5em;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				color: #5c5c5c;				
+nav#home-nav ul li {
+			float: left;
+			margin: 0 auto;
+}
+
+
+
+
+#home-nav li a {
+			display:block;
+			float:left;
+			padding: 0.2em 0.2em;
+			list-style: none;
+			text-decoration: none;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #5c5c5c;
+			background-color: white;
+}
+		
+#home-nav a:hover {
+					color: #cc0000;
+					
+					
+}
+
+
+nav#home-nav .current a {
+		background-color: #595959;
+		color: white;
 }
 
 #home-nav li:after {
 				content: "+ ";
 				float:left;
-				padding-top: 0.6em;		
+				padding-top: 0.3em;
+				margin-left: 87.5px;
+				margin-right: 87.5px;
 				font-family: "Courier New", Courier, monospace;
 				font-size: 1.2em;
 				color: #363636;
 }
 
-#home-nav li:last-child:after {
+nav#home-nav li:last-child:after {
+							display: inline;
 							content: none;
-}
-
-nav#home-nav ul a:hover {
-					display: block;
-					background-color: #595959;
-					color: white;								
+							
 }
 
 #info h1 {
 	display: block;
 	position: fixed;
-	top: 25px;
-	right: -590px;
-	background-color:white;
+	top: 5%;
+	right: -42%;
+	margin: 0 auto;
+	z-index: 1000;
 	-webkit-transform: rotate(90deg) translateX(20px); 
     -moz-transform:    rotate(90deg) translateX(20px);
     -ms-transform:     rotate(90deg) translateX(20px);
@@ -258,56 +286,61 @@ span {
 
 div#content {
 			position: relative;
-			top: 16em;
-			margin-right: 2.5%;
-			margin-left: 26.6%;
+			width: 960px;
+			left: 10%;
+			margin: 0 auto;
 			/*background-color: yellow;*/
 }
 
 article#firm-logo {
-			margin-right: 15%;
-			margin-left: 15%;
-			margin-bottom: 20%;
-			padding-top: 18%;
-			padding-bottom: 20%;
-			/*background-color: blue;*/
+			width: 850px;
+			margin: 0 auto;
+			padding-top: 25em;
+			/*background-color: white;*/
 }
 	
 article#firm-logo img {
 					float: left;
-					width: 180px;
-					background-color: white;
-					
+					width: 200px;
+					padding-right: 1.5em;
 }
 			
 article#firm-logo p {
 				display: block;
 				float: left;
-				width: 71%;
+				width: 600px;
+				padding-top: 0.7em;
 				font-family: Courier;
-				font-size: 0.94em;
+				font-size: 0.96em;
 				line-height: 1.5em;
 				text-align: justify;
-				padding-top: 1em;
 				color: #555555;
-				margin-left: 1.5em;
 }
 
 article#about {
-			margin: 30% 15% 40% 15%;
-			padding-top: 20%;
-			/*background-color: orange;*/
+			width: 850px;
+			margin: 0 auto;
+			margin-top: 30em;
+			/*background-color: blue;*/
 }
 	
 article#about img {
-					float: left;
-					width: 280px;
+					display: block;
+					position: relative;
+					left: 0;
+					margin: 0 auto;
+					width: 300px;	
+					padding-top: 15%;
+					padding-bottom: 1em;
+					/*background-color: green;*/
 }
 			
 article#about p {
 				display: block;
-				float: right;
-				width: 58%;
+				position: relative;
+				left: 0;
+				width: 550px;
+				margin: 0 auto;
 				font-family: Courier;
 				font-size: 0.94em;
 				line-height: 1.5em;
@@ -316,31 +349,41 @@ article#about p {
 }
 
 article#team {
-			margin: 30% 15%;
-			padding-top: 20%;
+			width: 850px;
+			margin: 0 auto;
+			margin-top: 30em;
+			padding-top: 9em;
 			/*background-color: green;*/
+}
+
+section#container1 {
+			position: relative;
+			width: 700px;
+			left: 0;
+			margin: 0 auto;
+			/*background-color: yellow;*/
 }
 
 #team .team1 {
 			float: left;
-			padding-bottom: 3em;
+			margin-bottom: 6em;
 }
 
 ul.polaroids1 li{	
 	float: left;
-	width: 20%;
+	width: 9em;
 	padding-right: 2em;
-	padding-top: 2%;
+	padding-bottom: 1.2em;
 }
 
 ul.polaroids1 a {
 	background: #fff;
 	display: inline;
 	float: left;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 9px 10px 9px;
 	text-align: center;
 	font-family: Courier;
-	font-size: 1em;
+	font-size: 0.965em;
 	color: #555555;
 	text-decoration: none;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -348,28 +391,33 @@ ul.polaroids1 a {
 	-webkit-transform: rotate(-3deg);
 	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(-3deg);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
 ul.polaroids1 a:after {content:attr(title);}
 
 ul.polaroids1 a:hover {
-	-webkit-transform: scale(1.25);
-	-moz-transform: scale(1.25);
+	-webkit-transform: rotate(3deg);
+	-webkit-transition: -webkit-transform .15s linear;
+	-moz-transform: rotate(3deg);
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	z-index: 5;	
+	z-index: 5;
 }
 
 ul.polaroids1 img {
-	width: 130px;	
+	max-width: 100%;
+	padding-bottom: 5px;
 }
 	
 #team p.text1 {
 	display: block;	
 	float: left;
-	padding-top: 0.5em;
+	padding-top: 1.5em;
 	padding-left: 0.5em;
-	width: 74%;
+	width: 73%;
 	font-family: Courier;
 	font-size: 0.94em;
 	line-height: 1.5em;
@@ -379,24 +427,24 @@ ul.polaroids1 img {
 
 #team .team2 {
 			float: right;
-			padding-bottom: 3em;
+			margin-bottom: 6em;
 }
 
 ul.polaroids2 li{	
 	float: right;
-	width: 20%;
+	width: 9em;
 	padding-left: 2em;
-	padding-top: 2%;
+	padding-bottom: 1.2em;
 }
 
 ul.polaroids2 a {
 	background: #fff;
 	display: inline;
 	float: right;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 9px 10px 9px;
 	text-align: center;
 	font-family: Courier;
-	font-size: 1em;
+	font-size: 0.965em;
 	color: #555555;
 	text-decoration: none;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -404,27 +452,32 @@ ul.polaroids2 a {
 	-webkit-transform: rotate(3deg);
 	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(3deg);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 }
 
 ul.polaroids2 a:after {content:attr(title);}
 
 ul.polaroids2 a:hover {
-	-webkit-transform: scale(1.25);
-	-moz-transform: scale(1.25);
+	-webkit-transform: rotate(-3deg);
+	-webkit-transition: -webkit-transform .15s linear;
+	-moz-transform: rotate(-3deg);
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 	z-index: 5;	
 }
 
 ul.polaroids2 img {
-	width: 130px;	
+	max-width: 100%;
+	padding-bottom: 5px;
 }
 
 #team p.text2 {
 	display: block;	
 	float: right;
-	width: 74%;
-	padding-top: 0.5em;
+	width: 73%;
+	padding-top: 2em;
 	padding-right: 0.5em;
 	font-family: Courier;
 	font-size: 0.94em;
@@ -435,20 +488,25 @@ ul.polaroids2 img {
 
 
 article#contact {
-			margin: 28% 15%;
-			padding-top: 20%;
-			/*background-color: pink;*/			
+			width: 850px;
+			margin: 0 auto;
+			background-color: white;
+			margin-top: 25em;
+			padding-top: 15%;
 }
 	
 article#contact img {
 					float: left;
 					width: 180px;
-					padding-right: 1.7em;
+					padding-right: 2em;
+					margin: 0 auto;
 }
 			
 article#contact p {
 				display: block;
-				padding-top: 3.7%;
+				width: 400px;
+				float: left;
+				padding-top: 2em;
 				font-family: Courier;
 				font-size: 0.94em;
 				line-height: 1.5em;
@@ -456,20 +514,23 @@ article#contact p {
 				color: #555555;
 }
 
+section#cont{
+					margin: 0 auto;
+					width: 650px;
+					/*background-color: yellow;*/
+}
+
 article#contact span {
 					display: inline-block;
 					color: #cc0000;
 }	
 
-article#contact p .fax {	
-	padding-right: 1.4em;
-}
-
 footer#site-footer {
 			position: relative;
-			top: 15em;
-			left: 29%;
-			width: 63%;
+			left: 10%;
+			width: 960px;
+			margin: 0 auto;
+			margin-top: 5em;
 			border-top: 1px solid rgba(130,130,130,1);
 }
 
