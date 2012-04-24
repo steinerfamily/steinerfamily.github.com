@@ -67,48 +67,51 @@ table {
 
 /* close commented backslash hack */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width:1000px) {
    
+    aside#pic-bar { display:none; }
     #info { display:none; }
   }
-  
-@media screen and (max-width: 1220px) {
-  
-    aside#pic-bar { display:none; }
-   } 
   
 body {
 	font-family:  "Courier New", Courier, monospace;
 	font-size:1em;
 }
 
+header {	
+	width:100%;
+	z-index: 1000;
+	position:fixed;
+}
+
 aside#pic-bar { 
-			width: 260px;
+			width: 20%;
+			max-width: 20em;
 			position: fixed;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			padding-left: 3px;
-			z-index: 10;
+			margin-left: 0.2em;
+			margin-top: 0.5em;
 			/*background-color: green;*/
 }			
 
 
 aside#pic-bar ul li {
+					width: 5.14em;
+					height: 3.59em;
 					float: left;
-					width: 82px;
-					height: 59px;
 					margin: 0.124em;
+					/*background-color:yellow;*/
 }
 
 aside#pic-bar img {
 				width: 100%;
 				height: 100%;
+				
 }
 
 .shadow {
-		-webkit-box-shadow: 1px 1px 0.0px;
-		-moz-box-shadow: 1px 1px 0.0px;
-		box-shadow: 1px 1px 0.0px;
+		-webkit-box-shadow: 0.0px 0.0px 0.0px;
+		-moz-box-shadow: 0.0px 0.0px 0.0px;
+		box-shadow: 0.0px 0.0px 0.0px;
 } 
 
 .face.back {
@@ -173,55 +176,42 @@ aside#pic-bar img {
 		background-color: white;
 }
 
-#header {
-		position: fixed;
-		left: 0px;
-		width: 100%;
-		/background-color: grey;*/
-		z-index: 9;
-}		
-
 nav#home-nav {
-			position: relative;
-			left: 10%;
-			margin: 0 auto;
-			width: 960px;
+			position: fixed;
+			top: 0em;
+			min-width: 70%;
+			margin-right: 30%;
+			margin-left: 26.6%;
 			z-index: 100;
 			padding-top: 0.3em;
 			padding-bottom: 7em;
 			background-color: white;
-			/*background-color: pink;*/
 }
 
 nav#home-nav ul {
+			width: 100%;
 			float: left;
-			width: 960px;
-			/*background-color: green;*/
 			list-style: none;
 }
 
 nav#home-nav ul li {
-			float: left;
-			margin: 0 auto;
+			display: block;
+			padding-left: 6%;
 }
 
-
-
-
-#home-nav li a {
-			display:block;
-			float:left;
-			padding: 0.2em 0.2em;
-			list-style: none;
-			text-decoration: none;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 1.5em;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			color: #5c5c5c;
-			background-color: white;
+nav#home-nav a {
+				display:block;
+				float:left;
+				padding: 0em 0.2em;
+				list-style: none;
+				text-decoration: none;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #5c5c5c;				
 }
-		
+
 #home-nav a:hover {
 					color: #cc0000;
 					
@@ -238,25 +228,24 @@ nav#home-nav .current a {
 				content: "+ ";
 				float:left;
 				padding-top: 0.3em;
-				margin-left: 87.5px;
-				margin-right: 87.5px;
+				margin-right: 6%;
+				margin-left: 6%;
 				font-family: "Courier New", Courier, monospace;
 				font-size: 1.2em;
 				color: #363636;
 }
 
-nav#home-nav li:last-child:after {
-							display: inline;
+#home-nav li:last-child:after {
 							content: none;
-							
 }
 
 #info h1 {
 	display: block;
 	position: fixed;
-	top: 5%;
-	right: -42%;
+	top: 2%;
+	right: -590px;
 	margin: 0 auto;
+	background-color:white;
 	z-index: 1000;
 	-webkit-transform: rotate(90deg) translateX(20px); 
     -moz-transform:    rotate(90deg) translateX(20px);
@@ -285,31 +274,31 @@ span {
 }
 
 div#content {
-			position: relative;
-			width: 960px;
-			left: 10%;
-			margin: 0 auto;
+			margin-right: 10.5%;
+			margin-left: 26.6%;
 			/*background-color: yellow;*/
 }
 
 article#firm-logo {
-			width: 850px;
-			margin: 0 auto;
-			padding-top: 25em;
-			/*background-color: white;*/
+			margin-right: 10%;
+			margin-left: 10%;
+			padding-top: 22em;
+			/*background-color: blue;*/
 }
 	
 article#firm-logo img {
 					float: left;
-					width: 200px;
-					padding-right: 1.5em;
+					width: 26%;
+					min-width: 9em;
+					padding-right: 1.2em;
+					padding-bottom: 1.2em;
+					
 }
 			
 article#firm-logo p {
 				display: block;
 				float: left;
-				width: 600px;
-				padding-top: 0.7em;
+				width: 70.5%;
 				font-family: Courier;
 				font-size: 0.96em;
 				line-height: 1.5em;
@@ -318,29 +307,26 @@ article#firm-logo p {
 }
 
 article#about {
-			width: 850px;
-			margin: 0 auto;
-			margin-top: 30em;
-			/*background-color: blue;*/
+			margin-left: 15%;
+			margin-right: 15%;
+			margin-top: 20em;
+			/*background-color: orange;*/
 }
 	
 article#about img {
-					display: block;
-					position: relative;
-					left: 0;
-					margin: 0 auto;
-					width: 300px;	
-					padding-top: 15%;
-					padding-bottom: 1em;
+					width: 35%;
+					min-width: 14em;
+					padding-top: 10.5em;
+					padding-bottom: 0.5em;
+					margin-left: 28%;
+					margin-right: 28%;
 					/*background-color: green;*/
 }
 			
 article#about p {
 				display: block;
-				position: relative;
-				left: 0;
-				width: 550px;
-				margin: 0 auto;
+				width: 70%;
+				padding-left: 6em;
 				font-family: Courier;
 				font-size: 0.94em;
 				line-height: 1.5em;
@@ -349,19 +335,11 @@ article#about p {
 }
 
 article#team {
-			width: 850px;
-			margin: 0 auto;
-			margin-top: 30em;
-			padding-top: 9em;
+			margin-right: 15%;
+			margin-left: 15%;
+			margin-top: 20em;
+			padding-top: 10em;
 			/*background-color: green;*/
-}
-
-section#container1 {
-			position: relative;
-			width: 700px;
-			left: 0;
-			margin: 0 auto;
-			/*background-color: yellow;*/
 }
 
 #team .team1 {
@@ -415,9 +393,9 @@ ul.polaroids1 img {
 #team p.text1 {
 	display: block;	
 	float: left;
-	padding-top: 1.5em;
+	padding-top: 1%;
 	padding-left: 0.5em;
-	width: 73%;
+	width: 71%;
 	font-family: Courier;
 	font-size: 0.94em;
 	line-height: 1.5em;
@@ -476,8 +454,8 @@ ul.polaroids2 img {
 #team p.text2 {
 	display: block;	
 	float: right;
-	width: 73%;
-	padding-top: 2em;
+	width: 71%;
+	padding-top: 1%;
 	padding-right: 0.5em;
 	font-family: Courier;
 	font-size: 0.94em;
@@ -488,36 +466,29 @@ ul.polaroids2 img {
 
 
 article#contact {
-			width: 850px;
-			margin: 0 auto;
-			background-color: white;
-			margin-top: 25em;
-			padding-top: 15%;
+			margin-right: 15%;
+			margin-left: 15%;
+			margin-top: 20em;
+			/*background-color: pink;*/			
 }
 	
 article#contact img {
 					float: left;
-					width: 180px;
-					padding-right: 2em;
-					margin: 0 auto;
+					max-width: 25%;
+					min-width: 9em;
+					padding-right: 1.2em;
 }
 			
 article#contact p {
 				display: block;
-				width: 400px;
+				width: 71%;
 				float: left;
-				padding-top: 2em;
+				padding-top: 3.7%;
 				font-family: Courier;
 				font-size: 0.94em;
 				line-height: 1.5em;
 				text-align: justify;
 				color: #555555;
-}
-
-section#cont{
-					margin: 0 auto;
-					width: 650px;
-					/*background-color: yellow;*/
 }
 
 article#contact span {
@@ -527,10 +498,9 @@ article#contact span {
 
 footer#site-footer {
 			position: relative;
-			left: 10%;
-			width: 960px;
-			margin: 0 auto;
-			margin-top: 5em;
+			top: 15em;
+			left: 29%;
+			width: 63%;
 			border-top: 1px solid rgba(130,130,130,1);
 }
 
