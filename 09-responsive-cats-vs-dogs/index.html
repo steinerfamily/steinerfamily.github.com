@@ -1,9 +1,557 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE HTML>
+<html lang="en">
+	
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Mazor-Steiner Law</title>
+		<meta name="description" content="Law Firm Web Site" />
+		<meta name="keywords" contetnt="mazor, steiner, tort, insurance, israel" />
+		<meta name="robots" content="nofollow" />
+		<meta charset="UTF-8" />
+		
+ 		 <!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<![endif]-->
+  		
+  		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  		 
+  		 
+    <script src="./js/jquery.js"></script>
+	<script src="./js/jquery.scrollTo.js"></script>
+	<script src="./js/jquery.nav.js"></script>
+	<script>
+	$(document).ready(function() {
+  		$('.nav').onePageNav({
+  		
+  			currentClass: 'current',
+  			changeHash: false,
+ 			scrollSpeed: 750,
+  			scrollOffset: 50,
+ 						
+    		begin: function() {
+	  			console.log('start');
+    		},
+    		end: function() {
+	  			console.log('stop');
+    		},
+			scrollOffset: 30
+  		});
+  
+	});
+	</script> 
+    </head>
 
-  </head>
-  <body>
-
-  </body>
+	<body>
+			
+		<aside id="pic-bar" class="clearfix">
+				<ul>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/lobya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/lobyb.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/booka.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/bookb.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+										
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/orona.jpeg"/>	
+						      </div>
+						      <div class="back face">
+						      <img src="./images/oronb.jpeg"/>
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/kardan1a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/kardan1b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/glimaa.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/glimab.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/loby2a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/loby2b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/hanaa.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/hanab.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/kardana.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/kardanb.jpeg"/>
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/ilana.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/ilanb.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/ereza.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/erezb.jpeg"/>
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/book1a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/book1b.jpeg"/>
+						    </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>						    
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/elia.jpeg"/>
+						      </div>
+						      <img src="./images/elib.jpeg"/>
+						      </div>						    
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/oda.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/odb.jpeg"/>
+						      </div>					
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/kardan3a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/kardan3b.jpeg"/>
+						      </div>						    
+						</div>
+						</li>
+					<li class="f1_container hover" class="black">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>				
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/leaha.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/leahb.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>						
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/loby1a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/loby1b.jpeg"/>
+						      </div>
+						</div>
+						</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+						</li>
+						<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/kardan4a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/kardan4b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/book2a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/book2b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/kardan2a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/kardan2b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/eli1a.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/eli1b.jpeg"/>
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      </div>
+						      <div class="back face">
+						      </div>
+						</div>
+					</li>
+					<li class="f1_container hover">
+						<div class="f1_card shadow">
+						      <div class="front face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						      <div class="back face">
+						      <img src="./images/greya.jpeg"/>
+						      </div>
+						</div>
+					</li>
+			
+		</aside>
+					
+		<aside id="info">
+				<h1> <span>+</span> Mazor Steiner <span>+</span> Kardan Tower: 154 Menachem Begin Road Tel-Aviv, Israel  <span>+</span>  (03) 6094433  <span>+</span> </h1>
+		</aside>
+			
+		<div id="content" class="clearfix">
+		
+		<header class="clearfix">
+			<nav id="home-nav" class="clearfix">
+				<ul class="nav" class="clearfix">
+					<li class="current"><a href="#firm-logo">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact-Us</a></li>
+				</ul>
+			</nav>	
+		</header>
+		
+			<article id="firm-logo" class="clearfix">
+				<img src="images\logo.jpeg" alt="logo"/>
+				<p> Mazor-Steiner is an Israeli boutique law firm specializing in torts, insurance law and professional malpractice, including physicians, attorneys and engineers. Since 1950 we have been providing outstanding legal representation to both private clients and leading insurance companies, situating ourselves as one of the leading law firms in its field.</p>
+			</article>
+			
+			<article id="about" class="clearfix">
+				<img src="images\about.png" alt="about"/>
+				<p> Mazor-Steiner Law firm was founded in 1950 by the late Attorney Uri MAzor, a graduate of one of the first classes of Hebrew University Law school. Attorney Mazor took part in the establishment of Israeli insurance companies, adapting their policies to the local needs and circumstances.
+					Over the years Attorney Mazor trained many students who interned in the firm and later on continued to succeed on their own. The excelling interns remained in the firm, and continue his legacy, after his death in 2008. </br> </br>  
+					The firm has sixty years of experience in the fields of torts and insurance law, and was involved in the amendment of insurance policies in reaction to the legislation of laws, such as the Insurance Contract Law, the Liability for Damaged Products Law and various other consumer protection laws. In addition, the firm drafted insurance policies for legal malpractice. </br></br> 
+					The firm has a reputation of representing free professionals, and mainly lawyers, doctors, engineers, architects, accountants, insurance agents and appraisers. Throughout the firm’s sixty years of practice its work has contributed to the creation of many important precedents in the fields of torts and insurance, including the issue of double insurance coverage, statute of limitations in insurance and torts claims, compensation for wrongful birth, and the definition of the standard of care required in various professions, such as lawyers, doctors, engineers and insurance agents. </br> </br> 
+					Approximately sixty percent of the firm’s workload is devoted to the representation of defendants, and the remainder to the representation of plaintiffs in personal damage claims as a result of car accidents, work accidents, medical malpractice and damage to property. As part of its services the firm provides representation in procedures involving the National Insurance Institute. In the last few years, due to demand on the part of recurring clients, the firm has begun providing legal services in the areas of real estate and expropriation. In addition, the firm regularly provides pro bono legal services. </br> </br>  
+					Over the years the firm has zealously maintained itself as a boutique law firm, allowing it to provide its clients with professional, personal and efficient services by highly skilled and experienced lawyers.</p>
+			</article>
+			
+			<article id="team" class="clearfix">
+				<section class="team1">
+					<ul class="polaroids1">
+						<li> 
+							<a title="Eli Steiner">
+							<img src="images\eli1.jpeg" alt="elis portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text1"> Attorney Elyahu Steiner is the head of the firm. He began as an intern, 
+									  joined the Israeli Bar Association in 1980 and became a partner in 1984.
+									  He holds a LL.B degree and a LL.M. degree both from Bar-Illan University. 
+									  In addition, he serves as a judge on the Bar association disciplinary appeals court.</p>				
+				</section>
+				
+				<section class="team2">
+					<ul class="polaroids2">
+						<li> 
+							<a title="Hana Steiner">
+							<img src="images\hana1.jpeg" alt="hanas portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text2"> Attorney Hana Steiner (Singer) has been working in the firm for 22 years.
+									  She earned her LL.B. degree from Bar-Illan University in 1978,
+									  and joined the Israeli Bar Association in 1980. She is a certified mitigator. </p>				
+				</section>
+				
+				<section class="team1">
+					<ul class="polaroids1">
+						<li> 
+							<a title="Erez Kariti">
+							<img src="images\erez1.jpeg" alt="erezs portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text1"> Attorney Erez Kariti began as an intern, and has been working in the firm for 22 years.
+									  He earned his LL.B. degree from Essex University in 1990,
+									  and joined the Israeli Bar Association in 1992. He is a certified mitigator and notary. </p>				
+				</section>
+				
+				<section class="team2" id="ilan">
+					<ul class="polaroids2">
+						<li> 
+							<a title="Ilan Uziel">
+							<img src="images\ilan1.jpeg" alt="ilans portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text2">  Attorney Ilan Uziel has been working in the firm for 19 years, after beginning as an intern.
+									   He earned his LL.B. degree from The College of Management Academic Studies in 1994
+									   and joined the Israeli Bar Association in 1995. He Holds a LL.M. degree jointly from Tel Aviv University and NorthWestern University. </p>				
+				</section>
+				
+				<section class="team1" id="oron">
+					<ul class="polaroids1">
+						<li> 
+							<a title="Oron Mael">
+							<img src="images\oron1.jpeg" alt="orons portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text1"> Attorney Oron Mael has been working in the firm for 16 years.
+							   	   	  He earned his LL.B. degree from The College of Management Academic Studies in 1995
+							   	   	  and joined the Israeli Bar Association in 1996. </p>	
+				</section>
+				
+				<section class="team2">
+					<ul class="polaroids2">
+						<li> 
+							<a title="Leah Shpiler">
+							<img src="images\leah1.jpeg" alt="leahs portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text2"> Attorney Leah Raz-Shpiler joined the firm in 2010.
+									  She earned a LL.B. degree from East London University in 1992 and joined the Israeli Bar Association in 1994.
+									  In addition, she holds a B.A. in Political Science and International Relations from the Hebrew University.</p>				
+				</section>
+				
+				<section class="team1">
+					<ul class="polaroids1">
+						<li> 
+							<a title="Avishay Judich">
+							<img src="images\avishay1.jpeg" alt="avishays portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text1"> Attorney Avishay Yuditz joined the firm in 2011.
+					 			      He earned his LL.B. degree from Sha'arei Mishpat College in 2009
+					 			      and joined the Israeli Bar Association in 2010. </p>				
+				</section>
+				
+				<section class="team2">
+					<ul class="polaroids2">
+						<li> 
+							<a title="Evyatar Amira">
+							<img src="images\evyatar1.jpeg" alt="hanas portrait" />
+							</a>
+						</li>
+					</ul>					
+					<p class="text2"> Attorney Evyatar Amira joined the firm in 2011. 
+									  He earned his LL.B. degree from The College of Management Academic Studies in 2010
+									  and joined the Israeli Bar Association in 2011. </p>				
+				</section>
+				
+				
+			</article>
+				
+			<article id="contact" class="clearfix">
+				<img src="images\kardan.png" alt="logo"/>
+				<p>Our offices are loacated in Tel-Aviv, on the first floor of the Kardan Tower.<br /> <br />
+				154 Menachem Begin Road, Tel-Aviv 64921.<br /> <br /> 
+				<span>info@steinerlaw.com</span><br /> <br /> 
+				<span>Phone:</span> +972 3 6094433 </br> <span class="fax">Fax:</span>   +972 3 6094466 </p>
+			</article>
+			
+		
+		<footer id="site-footer" class="clearfix">
+			<p class="copy-side">Copyright ©2012 <span> Mazor-Steiner Law Firm </span> </p>
+			<p class="designer-side">Designed & Built by
+			   <a href="#">Avishai Steiner</a>
+			</p>
+		</footer>
+		</div>
+		
+	</body>
 </html>
+
