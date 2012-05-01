@@ -97,32 +97,29 @@ aside#pic-bar {
 
 
 aside#pic-bar ul li {
-					width: 5.14em;
-					height: 3.59em;
 					float: left;
-					margin: 0.124em;
-					/*background-color:yellow;*/
 }
 
 aside#pic-bar img {
 				width: 100%;
-				height: 100%;
-				
+				height: 100%;				
 }
-
-.shadow {
-		-webkit-box-shadow: 0.0px 0.0px 0.0px;
-		-moz-box-shadow: 0.0px 0.0px 0.0px;
-		box-shadow: 0.0px 0.0px 0.0px;
-} 
 
 .face.back {
 		display: none;
 }
 
 .f1_container {
-			-webkit-perspective: 1000;
 			position: relative;
+			margin: 0.124em;
+			width: 5.14em;
+			height: 3.59em;
+			z-index: 1;
+			-webkit-perspective: 1000px;
+			-moz-perspective: 1000px;
+			-o-perspective: 1000px;
+			-ms-perspective: 1000px;
+			perspective: 1000px;			
 }
 				
 .f1_card {
@@ -146,9 +143,7 @@ aside#pic-bar img {
 																-o-transform: rotateY(180deg);
 																-ms-transform: rotateY(180deg);
 																transform: rotateY(180deg);
-																-webkit-box-shadow: 0.0px 0.0px 0.0px;
-																-moz-box-shadow: 0.0px 0.0px 0.0px;
-																box-shadow: 0.0px 0.0px 0.0px; 
+																
 }
 
 .face {
@@ -165,16 +160,10 @@ aside#pic-bar img {
 .face.back {
 		display: block;
 		-webkit-transform: rotateY(180deg);
-		-webkit-box-sizing: none;
 		-moz-transform: rotateY(180deg);
-		-moz-box-sizing: none;
 		-o-transform: rotateY(180deg);
-		-o-box-sizing: none;
 		-ms-transform: rotateY(180deg);
-		-ms-box-sizing: border-box;
 		transform: rotateY(-180deg);
-		box-sizing: none;
-		padding-bottom: none;
 		background-color: white;
 }
 
@@ -184,25 +173,31 @@ aside#pic-bar img {
 	top: 0;
 	right: -42%;
 	z-index: 1000;
-	-webkit-transform: rotate(90deg) translateX(0px); 
-    -moz-transform:    rotate(90deg) translateX(0px);
-    -ms-transform:     rotate(90deg) translateX(0px);
-    -o-transform:      rotate(90deg) translateX(0px); 
-    transform:         rotate(90deg) translateX(0px); 
+	-webkit-transform: rotate(90deg); 
+    -moz-transform:    rotate(90deg);
+    -ms-transform:     rotate(90deg);	
+    -o-transform:      rotate(90deg); 
+    transform:         rotate(90deg); 
+    
+    filter: progid:DXImageTransform.Microsoft.Matrix( /* IE6–IE9 */
+    M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17, sizingMethod='auto expand');
+    zoom: 1;
+    
     -webkit-transform-origin: 0 100%;
     -moz-transform-origin:    0 100%;
     -ms-transform-origin:     0 100%;
     -o-transform-origin:      0 100%;
     transform-origin:         0 100%;
+    
     font-family: "Courier New", Courier, monospace;
 	color: black;
-	font-size: 0.7em;
+	font-size: 0.78em;
 }
     
 span {
 		display: inline;
-		padding-right: 0.1em;
-		padding-left: 0.1em;
+		padding-right: 0.05em;
+		padding-left: 0.05em;
 		color: #cc0000;
 }
 
@@ -302,7 +297,7 @@ article#about {
 			margin-left: 25%;
 			margin-right: 10%;
 			margin-top: 20%;
-			padding-top: 2%;
+			padding-top: 1.5%;
 			/*background-color: orange*/
 }
 	
@@ -359,24 +354,47 @@ ul.polaroids1 a {
 	font-size: 0.965em;
 	color: #555555;
 	text-decoration: none;
+	
+	-webkit-transition: -webkit-transform .15s linear;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000');
+	
 	-webkit-transform: rotate(-3deg);
-	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg); 
+	
 	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 ul.polaroids1 a:after {content:attr(title);}
 
 ul.polaroids1 a:hover {
 	-webkit-transform: rotate(3deg);
-	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(3deg);
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg); 
+	
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000');
+	
 	z-index: 5;
 }
 
@@ -421,24 +439,47 @@ ul.polaroids2 a {
 	font-size: 0.965em;
 	color: #555555;
 	text-decoration: none;
+	
+	-webkit-transition: -webkit-transform .15s linear;
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000');
+	
 	-webkit-transform: rotate(3deg);
-	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg); 
+	
 	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 ul.polaroids2 a:after {content:attr(title);}
 
 ul.polaroids2 a:hover {
 	-webkit-transform: rotate(-3deg);
-	-webkit-transition: -webkit-transform .15s linear;
 	-moz-transform: rotate(-3deg);
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg); 
+	
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#3F000000');
+	
 	z-index: 5;	
 }
 
@@ -450,7 +491,7 @@ ul.polaroids2 img {
 #team p.text2 {
 	display: block;	
 	float: right;
-	width: 68%;
+	width: 67.5%;
 	padding-top: 1%;
 	font-family: Courier;
 	font-size: 0.94em;
