@@ -73,7 +73,7 @@ table {
  
   }
   
-  @media screen and (max-width:1280px) {
+  @media screen and (max-width:1040px) {
    
     #info { display:none; }
   }
@@ -105,21 +105,22 @@ aside#pic-bar img {
 				height: 100%;				
 }
 
-.face.back {
-		display: none;
-}
-
 .f1_container {
 			position: relative;
 			margin: 0.124em;
 			width: 5.14em;
 			height: 3.59em;
 			z-index: 1;
+			
 			-webkit-perspective: 1000px;
 			-moz-perspective: 1000px;
 			-o-perspective: 1000px;
 			-ms-perspective: 1000px;
 			perspective: 1000px;			
+}
+
+.face.back {
+		display: none;
 }
 				
 .f1_card {
@@ -142,8 +143,7 @@ aside#pic-bar img {
 																-moz-transform: rotateY(180deg);
 																-o-transform: rotateY(180deg);
 																-ms-transform: rotateY(180deg);
-																transform: rotateY(180deg);
-																
+																transform: rotateY(180deg);																
 }
 
 .face {
@@ -160,38 +160,43 @@ aside#pic-bar img {
 .face.back {
 		display: block;
 		-webkit-transform: rotateY(180deg);
+		-webkit-box-sizing: border-box;
 		-moz-transform: rotateY(180deg);
+		-moz-box-sizing: border-box;
 		-o-transform: rotateY(180deg);
+		-o-box-sizing: border-box;		
 		-ms-transform: rotateY(180deg);
-		transform: rotateY(-180deg);
+		-ms-box-sizing: border-box;
+		transform: rotateY(180deg);
+		box-sizing: border-box;			
 		background-color: white;
 }
 
 #info h1 {
 	position: fixed;
-	display: block;
-	top: 0;
-	right: -42%;
+	top: 1%;
+	width: 1000%;
+	left: 96%;
 	z-index: 1000;
-	-webkit-transform: rotate(90deg); 
-    -moz-transform:    rotate(90deg);
-    -ms-transform:     rotate(90deg);	
-    -o-transform:      rotate(90deg); 
-    transform:         rotate(90deg); 
+	-webkit-transform: rotate(90deg) translateX(20px); 
+    -moz-transform:    rotate(90deg) translateX(20px);
+    -ms-transform:     rotate(90deg) translateX(20px);
+    -o-transform:      rotate(90deg) translateX(20px); 
+    transform:         rotate(90deg) translateX(20px); 
     
     filter: progid:DXImageTransform.Microsoft.Matrix( /* IE6–IE9 */
     M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17, sizingMethod='auto expand');
     zoom: 1;
     
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin:    0 100%;
-    -ms-transform-origin:     0 100%;
-    -o-transform-origin:      0 100%;
-    transform-origin:         0 100%;
+   -webkit-transform-origin:  1.8em .5em;
+    -moz-transform-origin:    1.8em .5em;
+    -ms-transform-origin:     1.8em .5em;
+    -o-transform-origin:      1.8em .5em;
+    transform-origin:         1.8em .5em;
     
     font-family: "Courier New", Courier, monospace;
 	color: black;
-	font-size: 0.78em;
+	font-size: 0.781em;
 }
     
 span {
@@ -399,7 +404,7 @@ ul.polaroids1 a:hover {
 }
 
 ul.polaroids1 img {
-	max-width: 100%;
+	width: 100%;
 	padding-bottom: 5px;
 }
 	
@@ -484,7 +489,7 @@ ul.polaroids2 a:hover {
 }
 
 ul.polaroids2 img {
-	max-width: 100%;
+	width: 100%;
 	padding-bottom: 5px;
 }
 
