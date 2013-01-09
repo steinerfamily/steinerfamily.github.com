@@ -124,6 +124,11 @@ body {
     ALL: Orange Theme
    =================== */
 
+#sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 
 .header-container {
     background-color: #eeeeee; 
@@ -135,12 +140,16 @@ body {
     border-top: 0px solid #e44d26;
 }
 
+header {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 0 auto; 
+} 
+
 header .title {
- display:block;
- font-size: 0;
- padding-top: 5px;
-
-
+    display:block;
+    font-size: 0;
+    padding-top: 5px;
 }
 
 header .title a {
@@ -155,21 +164,27 @@ header .title a {
 /* ==============
     MOBILE: Menu
    ============== */
+nav {
+
+}
 
 nav ul {
     margin: 0;
     padding: 0;
+
 }
 
 nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #666666;
+    color: #373737;
+    font-style: italic;
+    font-weight: bold; 
 }
 
 nav a:hover {
-    opacity: 0.9;
+    color: #5bb52d;
 
 }
 
@@ -191,7 +206,7 @@ nav a:hover {
 .textBlock {
     width: 400px;
     height: 60px;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding-bottom: 30px;
 }
 
@@ -304,6 +319,12 @@ text-decoration: none;
     color: #5bb52d;
 }
 
+.startSurfText {
+    max-width: 85%;
+    min-width: 600px;
+
+}
+
 #affiliateData {
     background-color: white;
     padding: 20px 0;
@@ -333,18 +354,24 @@ text-decoration: none;
     font-size: 1.29em;
     line-height: 1.7em;
     padding-bottom: 2%;
+    margin-bottom: 20px;
+}
+
+.affiliateSection img {
+    display: block;
+    margin: 0 auto;
+     margin-bottom: 20px;
 }
 
 #footerData {
-    background-color: #f4f4f4;
-    border-top: solid 1px #e1e1e1;
+    background-color: #373737;
+    padding-top: 5px;
 }
 
 footer {
     width: 100%;
     margin: 0 auto;
     font-size: 0.7em;
-     color: #787878;
 } 
 
 #footerData .leftFooter {
@@ -359,12 +386,13 @@ float: left;
 
 #footerData .leftFooter ul li a {
     text-decoration: none; 
-    color: #787878;
+    color: white;
     margin-right: 30px;
 }
 
 #footerData .rightFooter {
 float: right;
+color: white;
 }
 
 
@@ -384,7 +412,7 @@ float: right;
 
 .banner-container {
     background-color: #fafafa;
-    background: url(../img/bannerBackground.png) no-repeat top center; 
+    background: url(../img/bannerBackground1.jpg) no-repeat top center; 
 }
 
 #banner {
@@ -396,7 +424,7 @@ float: right;
 
 .bannerImage {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     min-width: 300px;
     opacity: 0.99;
 }
@@ -404,7 +432,8 @@ float: right;
 .bannerImage img {
     display: block;
     margin: 0 auto;
-    padding-top:50px;
+    padding-top: 140px;
+    padding-bottom: 70px;
     max-width: 100%;
     min-width: 330px;
 }
@@ -427,13 +456,13 @@ float: right;
 
     nav a {
         float: left;
-        width: 22%;
-        margin: 0 1%;
+        width: 25%;
+        margin: 0 5%;
         
     }
 
     nav li:first-child a {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     nav li:last-child a {
@@ -478,9 +507,9 @@ float: right;
 
     nav {
         float: right;
-        width: 50%;
-        padding-top: 60px;
-        font-size: 1.2em;
+        width: 46%;
+        padding-top: 85px;
+        font-size: 1.3em;
     }
 
 /* ============
